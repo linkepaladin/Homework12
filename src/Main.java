@@ -6,19 +6,24 @@ public class Main {
         String firstName = "Ivan";
         String middleName = "Ivanovich";
         String lastName = "Ivanov";
-        String fullName = lastName + " " + firstName + " " + middleName;
-        System.out.println("Ф.И.О сотрудника " + fullName);
+
+        String fullName = lastName;
+        fullName += " " + firstName;
+        fullName += " " + middleName;
+        System.out.println("Ф. И. О сотрудника " + fullName);
 
         // task 2
 
-        System.out.println("Задача 2");
+        System.out.println("\nЗадача 2");
         System.out.println("Данные Ф. И. О. сотрудника для заполнения отчета — " + fullName.toUpperCase());
 
         // task 3
 
-        System.out.println("Задача 3");
+        System.out.println("\nЗадача 3");
 
-        fullName = "Иванов Семён Семёнович";
+        fullName = "Иванов";
+        fullName += " Семён";
+        fullName += " Семёнович";
         fullName = fullName.replace('ё', 'е');
         System.out.println("Данные Ф. И. О. сотрудника — " + fullName);
 
